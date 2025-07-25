@@ -1,0 +1,19 @@
+#  Salary list analysis - Find total, average, min, max salary
+
+salaries = [38000, 42000, 50000, 47000, 39000, 56000, 61000, 48000]
+
+# Total number of employees
+total_employees = len(salaries)
+
+# Average salary
+average_salary = sum(salaries) / total_employees
+
+# Minimum and Maximum salary
+min_salary = min(salaries)
+max_salary = max(salaries)
+
+# Output results
+print("Total Employees:", total_employees)
+print("Average Salary:", average_salary)
+print("Minimum Salary:", min_salary)
+print("Maximum Salary:", max_salary)
