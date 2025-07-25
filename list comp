@@ -1,0 +1,7 @@
+#  Filter names starting with 'A'
+
+names = ["Aadarsh", "Riya", "Aman", "Sohail", "Aditi", "Neha"]
+
+# Filter names
+a_names = [name for name in names if name.startswith('A')]
+print("Names starting with 'A':", a_names)
