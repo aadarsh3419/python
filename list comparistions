@@ -1,0 +1,6 @@
+# Answer:
+# Shorter way to write for loops on lists.
+
+nums = [1, 2, 3, 4]
+squared = [x**2 for x in nums]
+print("Squared:", squared)
