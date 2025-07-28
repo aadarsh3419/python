@@ -1,0 +1,12 @@
+import numpy as np
+from scipy.stats import norm
+
+n = 36
+mean = 52
+std_dev = 8
+z_score = 1.96  # for 95% confidence
+
+se = std_dev / np.sqrt(n)
+margin = z_score * se
+ci = (mean - margin, mean + margin)
+print("Confidence Interval:", ci)
