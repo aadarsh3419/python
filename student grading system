@@ -25,8 +25,8 @@ class Student:
             print("Result: Failed ❌\n")
 
 # Create students with numeric marks
-student1 = Student("Aalok", 50)
-student2 = Student("Aadarsh", 38)
+student1 = Student("Aalok", 38)
+student2 = Student("Aadarsh", 89)
 
 student1.grade()
 student2.grade()
