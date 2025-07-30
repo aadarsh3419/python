@@ -1,10 +1,10 @@
 # 🐍 Aadarsh's Python Practice Repo
 
+![Banner](assets/banner.png)
+
 Hi! I'm Aadarsh, and this is my personal Python learning journey.  
 Here I share simple, real-world Python programs that I'm writing and practicing daily as part of my Data Science preparation.  
 From basic syntax to real-world logic — all code here is beginner-friendly and cleanly written.
-
-![Python Banner](banner.png)
 
 ---
 
@@ -13,7 +13,7 @@ From basic syntax to real-world logic — all code here is beginner-friendly and
 ✅ Python basics (variables, loops, functions, classes)  
 ✅ Real-life examples (grading system, billing logic, etc.)  
 ✅ Practice scripts (with explanation)  
-✅ Python for Data Science (coming soon)
+✅ Python for Data Science (coming soon)  
 
 ---
 
