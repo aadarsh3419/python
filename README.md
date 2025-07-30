@@ -38,3 +38,26 @@ student2 = Student("Aadarsh", 38)
 
 student1.grade()
 student2.grade()
+
+
+
+
+
+
+
+
+
+## 📚 Object-Oriented Programming Example – Book Class
+
+```python
+class Book:
+    def __init__(self, title, author, pages):
+        self.title = title
+        self.author = author
+        self.pages = pages
+
+    def boss(self):
+        print(f"The title of the book is {self.title}")
+        print(f"The author of the book is {self.author}")
+        print(f"The number of pages is {self.pages}")
+
