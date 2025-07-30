@@ -42,11 +42,6 @@ student2.grade()
 
 
 
-
-
-
-
-
 ## 📚 Object-Oriented Programming Example – Book Class
 
 ```python
@@ -60,4 +55,31 @@ class Book:
         print(f"The title of the book is {self.title}")
         print(f"The author of the book is {self.author}")
         print(f"The number of pages is {self.pages}")
+
+
+## 🚗 Encapsulation Example – Car Class
+
+This example demonstrates **encapsulation** in Python using private variables (`__speed`) and controlled access through methods.
+
+```python
+class Car:
+    def __init__(self):
+        self.__speed = 0
+
+    def accelerate(self, amount):
+        if amount > 0:
+            self.__speed += amount
+            print(f"Accelerated by {amount}. Current speed: {self.__speed} km/h")
+        else:
+            print("Speed increase must be positive!")
+
+    def brake(self, amount):
+        if amount > 0:
+            self.__speed = max(0, self.__speed - amount)
+            print(f"Braked by {amount}. Current speed: {self.__speed} km/h")
+        else:
+            print("Brake amount must be positive!")
+
+    def get_speed(self):
+        return self.__speed
 
