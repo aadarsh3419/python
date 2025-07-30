@@ -12,8 +12,8 @@ From basic syntax to real-world logic — all code here is beginner-friendly and
 
 ✅ Python basics (variables, loops, functions, classes)  
 ✅ Real-life examples (grading system, billing logic, etc.)  
-✅ Practice scripts (with explanation)  
-✅ Python for Data Science (coming soon)  
+✅ Practice scripts (with explanations)  
+✅ Python for Data Science (coming soon)
 
 ---
 
