@@ -1,0 +1,27 @@
+class Car:
+    def __init__(self):
+        self.__speed = 0  # Private attribute to store speed
+
+    def accelerate(self, amount):
+        if amount > 0:
+            self.__speed += amount
+            print(f"Accelerated by {amount}. Current speed: {self.__speed} km/h")
+        else:
+            print("Speed increase must be positive!")
+
+    def brake(self, amount):
+        if amount > 0:
+            self.__speed = max(0, self.__speed - amount)
+            print(f"Braked by {amount}. Current speed: {self.__speed} km/h")
+        else:
+            print("Brake amount must be positive!")
+
+    def get_speed(self):
+        return self.__speed
+
+
+# Example usage
+my_car = Car()
+my_car.accelerate(50)
+my_car.brake(20)
+print("Final Speed:", my_car.get_speed(), "km/h")
