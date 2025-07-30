@@ -1,0 +1,12 @@
+## ⚙️ Exception Handling Example – Safe Division
+
+```python
+def safe_divide(a, b):
+    try:
+        result = a / b
+    except ZeroDivisionError:
+        print("Oops! Cannot divide by zero.")
+    else:
+        print("Good work! Result is:", result)
+    finally:
+        print("Done.")
