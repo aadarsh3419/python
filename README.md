@@ -3,7 +3,7 @@ Hi! I'm Aadarsh, and this is my personal Python learning journey.
 Here I share simple, real-world Python programs that I'm writing and practicing daily as part of my Data Science preparation.
 From basic syntax to real-world logic — all code here is beginner-friendly and cleanly written.
 
-![Alt Text]([ithubusercontent.com/YOUR_USERNAME/YOUR_REPO/main/assets/your-image.png](https://chatgpt.com/s/m_6889f0eff9508191b5a9a58486c31198)](https://www.google.com/imgres?q=python%20image%20for%20github%20profestnal&imgurl=https%3A%2F%2Frepository-images.githubusercontent.com%2F146619556%2F010dd080-4d26-11ea-8350-5916fe9db853&imgrefurl=https%3A%2F%2Fgithub.com%2Ftopics%2Flearning-python&docid=_P82jLaMHkdjuM&tbnid=OO5BXHlBkMORMM&vet=12ahUKEwihg5DnrOSOAxUhUGcHHTjOF58QM3oECB0QAA..i&w=601&h=203&hcb=2&ved=2ahUKEwihg5DnrOSOAxUhUGcHHTjOF58QM3oECB0QAA))
+![Uploading image.png…]()
 
 
 📌 What You’ll Find Here
