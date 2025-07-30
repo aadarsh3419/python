@@ -1,6 +1,6 @@
 # 🐍 Aadarsh's Python Practice Repo
 
-![Banner](assets/banner.png)
+![Project Pipeline](https://github.com/najirh/Walmart_SQL_Python/blob/main/walmart_project-piplelines.png)
 
 Hi! I'm Aadarsh, and this is my personal Python learning journey.  
 Here I share simple, real-world Python programs that I'm writing and practicing daily as part of my Data Science preparation.  
