@@ -1,0 +1,32 @@
+This Python class simulates a student grading system.
+
+__init__: Initializes student name and marks.
+
+grade(): Prints the student's name, marks, and whether they Passed ✅ or Failed ❌ based on a passing mark of 40.
+
+Two students (Aalok and Aadarsh) are created with different marks.
+
+The result is printed for each student.
+
+📌 Logic:
+If a student's marks are ≥ 40, they pass.
+If marks are < 40, they fail.
+
+class Student: 
+    def __init__(self, name, marks):
+        self.name = name
+        self.marks = marks
+
+    def grade(self):
+        print(f"Marks of {self.name} is {self.marks}")
+        if self.marks >= 40:
+            print("Result: Passed ✅\n")
+        else:
+            print("Result: Failed ❌\n")
+
+# Create students with numeric marks
+student1 = Student("Aalok", 50)
+student2 = Student("Aadarsh", 38)
+
+student1.grade()
+student2.grade()
