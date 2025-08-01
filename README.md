@@ -66,6 +66,19 @@ pd.merge(emp, sal, on='EmpID', how='left')   # Left Join
 pd.merge(emp, sal, on='EmpID', how='right')  # Right Join
 pd.merge(emp, sal, on='EmpID', how='outer')  # Full Outer Join
 
+df.pivot_table(index='Department', values='Salary', aggfunc='mean')    #This gives average salary per department
+
+df.pivot_table(index='Department', columns='Gender', values='Salary', aggfunc='mean', fill_value=0)
+
+df['Age'].apply(lambda x: x ** 2)    #df['Age'].apply(lambda x: x ** 2)
+
+df.apply(lambda row: row['Salary'] - row['Tax'], axis=1)   #axis=1 means row-wise
+
+
+
+
+
+
 
 
 
