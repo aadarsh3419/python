@@ -1,0 +1,31 @@
+Mini Project: Personal Health Tracker 7-Day Walking Tracker
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 1. Sample Walking Data
+data = {
+    'Date': pd.date_range(start='2025-07-24', periods=7, freq='D'),
+    'Walking_Minutes': [30, 45, 20, 60, 50, 35, 40]
+}
+
+df = pd.DataFrame(data)
+
+# 2. Set Date as Index
+df.set_index('Date', inplace=True)
+
+# 3. Show Full Data
+print("Full Walking Data:\n", df)
+
+# 4. Calculate Weekly Stats
+print("\nAverage Walk (min):", df['Walking_Minutes'].mean())
+print("Max Walked on:", df['Walking_Minutes'].idxmax(), "→", df['Walking_Minutes'].max(), "min")
+print("Min Walked on:", df['Walking_Minutes'].idxmin(), "→", df['Walking_Minutes'].min(), "min")
+
+# 5. Add Rolling Average (3-day)
+df['Rolling_Avg'] = df['Walking_Minutes'].rolling(window=3).mean()
+
+# 6. Plot the Walking Trend
+df.plot(figsize=(10, 5), title='7-Day Walking Tracker')
+plt.ylabel("Walking Minutes")
+plt.grid(True)
+plt.show()
