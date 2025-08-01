@@ -1,0 +1,19 @@
+import pandas as pd
+
+data = {
+    'Day': ['Monday', 'Tuesday', 'Wednesday'],
+    'Steps': [8000, 7200, 9000],
+    'Walking_Minutes': [35, None, 45]
+}
+
+df = pd.DataFrame(data)
+
+# Fill missing values with 30
+df['Walking_Minutes'] = df['Walking_Minutes'].fillna(30)
+
+# Access only the 'Steps' column
+steps_column = df['Steps']
+
+print(df)
+print("Steps column:")
+print(steps_column)
