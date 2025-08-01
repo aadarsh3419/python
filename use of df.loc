@@ -1,0 +1,10 @@
+import pandas as pd
+
+data = {
+    'Day': ['Monday', 'Tuesday', 'Wednesday'],
+    'Steps': [8000, 7200, 9000],
+    'Walking_Minutes': [35, None, 45]
+}
+
+df = pd.DataFrame(data)
+df.loc[df['Day'] == 'Wednesday', 'Steps'].values[0]
