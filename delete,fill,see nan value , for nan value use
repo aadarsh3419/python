@@ -1,0 +1,10 @@
+# 1. Check for missing values
+print(df.isnull())
+
+# 2. Drop rows with any NaN values
+df_dropped = df.dropna()
+print(df_dropped)
+
+# 3. Replace all NaN values with 0
+df_filled = df.fillna(0)
+print(df_filled)
