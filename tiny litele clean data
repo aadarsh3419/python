@@ -1,0 +1,12 @@
+import pandas as pd
+
+data = {
+    'Name': ['Aadarsh', 'Ravi', 'Priya', None],
+    'Steps': [7000, 8500, None, 9000],
+    'Walking_Minutes': [30, 40, 25, None]
+}
+
+df = pd.DataFrame(data)
+
+df_cleaned = df.dropna()     # Removed rows with missing values
+print(df_cleaned)
