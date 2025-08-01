@@ -17,7 +17,48 @@ From basic syntax to real-world logic — all code here is beginner-friendly and
 
 ---
 
-## 🧑‍💻 Sample Code – Student Grading System
+📌 Real-Life Example: Cleaning and Merging Data
+Imagine one CSV has customer info, another has purchase history.
+We:
+
+1  Load both using pd.read_csv()
+
+2  Remove nulls using dropna()
+
+3  Merge using pd.merge() on CustomerID
+
+4  Group by Product and summarize sales.
+
+df.isnull()         # Shows True/False for each cell
+df.isnull().sum()   # Total missing in each column
+df.dropna()               # Drops rows with ANY missing value
+df.dropna(axis=1)         # Drops columns with ANY missing value
+df.dropna(thresh=2)       # Drops rows with less than 2 non-null values
+df.fillna(0)                        # Fill all NaNs with 0
+df['Age'].fillna(df['Age'].mean()) # Fill Age column NaNs with mean
+df.fillna(method='ffill')          # Forward fill (copy previous)
+df.fillna(method='bfill')          # Backward fill (copy next)
+df.groupby('Dept').mean()          #This gives average salary per Dept
+df.groupby('Dept')['Salary'].agg(['mean', 'max', 'min'])
+emp = pd.DataFrame({                             # Like SQL joins — used to combine two tables.
+    'EmpID': [1, 2, 3],
+    'Name': ['Aadarsh', 'Raj', 'Priya']
+})
+
+sal = pd.DataFrame({
+    'EmpID': [1, 2, 4],
+    'Salary': [50000, 60000, 45000]
+})
+
+pd.merge(emp, sal, on='EmpID')      #Merge (like INNER JOIN)
+pd.merge(emp, sal, on='EmpID', how='left')   # Left Join
+pd.merge(emp, sal, on='EmpID', how='right')  # Right Join
+pd.merge(emp, sal, on='EmpID', how='outer')  # Full Outer Join
+
+
+
+
+## 🧑‍💻 Sample Code 
 
 ```python
 class Student: 
