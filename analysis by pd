@@ -1,0 +1,19 @@
+import pandas as pd
+
+# Example: Analyzing sales data
+data = {
+    'Product': ['A', 'B', 'C', 'A', 'B'],
+    'Sales': [100, 200, 150, 120, 220]
+}
+df = pd.DataFrame(data)
+
+# Total Sales
+total_sales = df['Sales'].sum()
+# Average Sales
+avg_sales = df['Sales'].mean()
+# Group by Product
+product_summary = df.groupby('Product')['Sales'].sum()
+
+print("Total Sales:", total_sales)
+print("Average Sales:", avg_sales)
+print("Sales by Product:\n", product_summary)
