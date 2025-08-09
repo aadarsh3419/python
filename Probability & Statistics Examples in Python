@@ -1,0 +1,76 @@
+"""
+Probability & Statistics Examples in Python
+Author: Aadarsh Tiwari
+Description: Collection of 10 examples demonstrating
+             probability and statistics concepts in Python.
+"""
+
+# 1. Probability of Specific Event (Basic Rule)
+favorable_outcomes = 1
+total_outcomes = 6
+probability = favorable_outcomes / total_outcomes
+print("1. P(rolling a 4):", probability)
+
+# 2. Complement Rule
+P_heads = 0.5
+P_not_heads = 1 - P_heads
+print("2. P(Not Heads):", P_not_heads)
+
+# 3. Addition Rule for Mutually Exclusive Events
+P_A = 0.3
+P_B = 0.4
+P_A_or_B = P_A + P_B
+print("3. P(A or B) [Mutually Exclusive]:", P_A_or_B)
+
+# 4. Addition Rule for Non-Mutually Exclusive Events
+P_A = 0.5
+P_B = 0.6
+P_A_and_B = 0.3
+P_A_or_B = P_A + P_B - P_A_and_B
+print("4. P(A or B) [Non-Mutually Exclusive]:", P_A_or_B)
+
+# 5. Multiplication Rule for Independent Events
+P_A = 0.4
+P_B = 0.5
+P_A_and_B = P_A * P_B
+print("5. P(A and B) [Independent]:", P_A_and_B)
+
+# 6. Multiplication Rule for Dependent Events
+P_A = 0.5
+P_B_given_A = 0.3
+P_A_and_B = P_A * P_B_given_A
+print("6. P(A and B) [Dependent]:", P_A_and_B)
+
+# 7. Conditional Probability
+P_A_and_B = 0.2
+P_B = 0.4
+P_A_given_B = P_A_and_B / P_B
+print("7. P(A|B):", P_A_given_B)
+
+# 8. Bayes’ Theorem
+P_D = 0.02          # P(Disease)
+P_not_D = 0.98      # P(No Disease)
+P_Pos_given_D = 0.90        # P(Positive | Disease)
+P_Pos_given_not_D = 0.05    # P(Positive | No Disease)
+
+numerator = P_Pos_given_D * P_D
+denominator = (P_Pos_given_D * P_D) + (P_Pos_given_not_D * P_not_D)
+P_D_given_Pos = numerator / denominator
+print("8. P(Disease | Positive):", round(P_D_given_Pos, 4))
+
+# 9. Binomial Probability
+from scipy.stats import binom
+n = 15
+p = 0.3
+k = 5
+probability = binom.pmf(k, n, p)
+print(f"9. P(X = {k} successes in {n} trials):", probability)
+
+# 10. Normal Distribution Probability
+import scipy.stats as stats
+mean = 50
+std_dev = 10
+x = 60
+z_score = (x - mean) / std_dev
+P_less_than_x = stats.norm.cdf(z_score)
+print(f"10. P(X ≤ {x}):", P_less_than_x)
