@@ -1,0 +1,20 @@
+import pandas as pd
+
+# Sample diabetic patient dataset
+data = {
+    'Patient_ID': [1, 2, 3, 4, 5],
+    'Age': [25, None, 40, 55, None],
+    'Blood_Sugar': [150, 180, None, 140, 200]
+}
+
+df = pd.DataFrame(data)
+
+# Data Cleaning
+df['Age'] = df['Age'].fillna(df['Age'].mean())
+df['Blood_Sugar'] = df['Blood_Sugar'].fillna(df['Blood_Sugar'].median())
+
+# Summary Statistics
+summary = df.describe()
+
+print(df)
+print(summary)
