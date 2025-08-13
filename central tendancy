@@ -1,0 +1,13 @@
+import statistics
+
+class Solution(object):
+    def statsSummary(self, data):
+        return {
+            "mean": statistics.mean(data),
+            "median": statistics.median(data),
+            "mode": statistics.mode(data)
+        }
+
+# Example
+sol = Solution()
+print(sol.statsSummary([1, 2, 2, 3, 4]))
