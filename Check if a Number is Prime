@@ -1,0 +1,13 @@
+class Solution(object):
+    def isPrime(self, num):
+        if num <= 1:
+            return False
+        for i in range(2, int(num**0.5) + 1):
+            if num % i == 0:
+                return False
+        return True
+
+# Example
+sol = Solution()
+print(sol.isPrime(7))   # True
+print(sol.isPrime(10))  # False
