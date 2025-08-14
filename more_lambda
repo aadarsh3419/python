@@ -1,0 +1,11 @@
+# Q1
+hlw = lambda nums: [x + 5 for x in nums]
+print(hlw([1, 2, 3, 4, 5]))
+
+# Q2
+hlw = lambda nums: [x.upper() for x in nums]
+print(hlw(["python", "lambda", "practice"]))
+
+# Q3
+hlw = lambda nums: [x for x in nums if x % 2 == 0]
+print(hlw([10, 15, 20, 25, 30]))
