@@ -1,0 +1,19 @@
+# Q1
+hlw1 = lambda words: [word[::-1] for word in words]
+print(hlw1(["python", "lambda"]))
+
+# Q2
+hlw2 = lambda a, b: [a[i] * b[i] for i in range(len(a))]
+print(hlw2([2, 4, 6], [1, 2, 3]))
+
+# Q3
+hlw3 = lambda d: {k.upper(): v for k, v in d.items()}
+print(hlw3({"name": "Aadarsh", "city": "Delhi"}))
+
+# Q4
+hlw4 = lambda nums: [n**2 for n in nums if n % 2 != 0]
+print(hlw4([1, 2, 3, 4, 5]))
+
+# Q5
+hlw5 = lambda words: [word[0] for word in words]
+print(hlw5(["Python", "Is", "Fun"]))
