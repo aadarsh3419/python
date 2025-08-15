@@ -1,0 +1,3 @@
+f5 = lambda keys, vals: dict(zip(keys, vals))
+print(f5(['name', 'age'], ['Aadarsh', 24]))
+# Output: {'name': 'Aadarsh', 'age': 24}
