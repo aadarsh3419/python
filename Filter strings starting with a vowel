@@ -1,0 +1,3 @@
+f2 = lambda words: [w for w in words if w[0].lower() in 'aeiou']
+print(f2(["apple", "banana", "Orange", "grape", "umbrella"]))
+# Output: ['apple', 'Orange', 'umbrella']
