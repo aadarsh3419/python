@@ -1,0 +1,4 @@
+from functools import reduce
+f6 = lambda n: reduce(lambda a, b: a * b, range(1, n+1))
+print(f6(5))
+# Output: 120
