@@ -1,0 +1,4 @@
+
+f9 = lambda s: max(s.split(), key=len)
+print(f9("Python makes you think sharper"))
+# Output: sharper
