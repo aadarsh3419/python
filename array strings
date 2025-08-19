@@ -1,0 +1,20 @@
+# Example array
+arry = [10, 20, 30, 40, 50]
+
+# Sum of all elements
+print("Sum of array:", sum(arry))
+
+# Max and Min
+print(f"The max value is {max(arry)}, the min value is {min(arry)}")
+
+# Reverse array
+hlw = arry[::-1]
+print("Reversed array:", hlw)
+
+# Remove first element
+arry.pop(0)
+print("After removing first element:", arry)
+
+# Insert 100 at index 2
+arry.insert(2, 100)
+print("After inserting 100 at index 2:", arry)
