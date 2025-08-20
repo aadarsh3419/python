@@ -1,0 +1,10 @@
+arr = [10, 20, 30, 40, 50]
+
+# Using built-in sum()
+print("Sum:", sum(arr))
+
+# Manually using loop
+total = 0
+for num in arr:
+    total += num
+print("Sum using loop:", total)
