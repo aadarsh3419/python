@@ -1,0 +1,10 @@
+arr = [1, 2, 3, 4, 5]
+
+# Using slicing
+print("Reversed:", arr[::-1])
+
+# Using loop
+rev = []
+for i in range(len(arr)-1, -1, -1):
+    rev.append(arr[i])
+print("Reversed using loop:", rev)
