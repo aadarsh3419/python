@@ -1,0 +1,18 @@
+arr = [5, 17, 2, 9, 12]
+
+# Built-in functions
+print("Max:", max(arr))
+print("Min:", min(arr))
+
+# Manual way
+maximum = arr[0]
+minimum = arr[0]
+
+for num in arr:
+    if num > maximum:
+        maximum = num
+    if num < minimum:
+        minimum = num
+
+print("Max (manual):", maximum)
+print("Min (manual):", minimum)
