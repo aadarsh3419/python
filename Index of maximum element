@@ -1,0 +1,5 @@
+maximum = []
+for i in range(len(nums)):
+        if maximum > i
+             maiximum = i
+        return maximum
