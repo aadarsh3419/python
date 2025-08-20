@@ -1,0 +1,4 @@
+arr = [10, 20, 30, 40, 50]
+
+# Slice from index 1 to -1 (exclude first and last)
+print("Middle elements:", arr[1:-1])
