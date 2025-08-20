@@ -1,0 +1,4 @@
+arr = [1, 2, 3, 4, 5]
+
+arr.insert(3, 100)  # index 3 means after 3rd element
+print("After insert:", arr)
